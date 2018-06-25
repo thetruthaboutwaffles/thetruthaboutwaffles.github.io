@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','//byui-cit230.github.io/weather/data/towndata.json',true);
+weatherObject.open('GET','https://byui-cit230.github.io/weather/data/towndata.json',true);
 weatherObject.send();
 
 weatherObject.onload = function() {
@@ -36,4 +36,5 @@ weatherObject.onload = function() {
   document.getElementById('yearFound3').innerHTML = weatherInfo.towns[3].yearFounded;
   document.getElementById('pop3').innerHTML = weatherInfo.towns[3].currentPopulation;
   document.getElementById('annRain3').innerHTML = weatherInfo.towns[3].averageRainfall;
+
 }
