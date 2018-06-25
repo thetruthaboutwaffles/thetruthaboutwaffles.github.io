@@ -36,3 +36,4 @@ weatherObject.onload = function() {
   document.getElementById('yearFound3').innerHTML = weatherInfo.towns[3].yearFounded;
   document.getElementById('pop3').innerHTML = weatherInfo.towns[3].currentPopulation;
   document.getElementById('annRain3').innerHTML = weatherInfo.towns[3].averageRainfall;
+}
