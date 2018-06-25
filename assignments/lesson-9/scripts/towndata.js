@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','https://byui-cit230.github.io/weather/data/towndata.json',true);
+weatherObject.open('GET','//byui-cit230.github.io/weather/data/towndata.json',true);
 weatherObject.send();
 
 weatherObject.onload = function() {
