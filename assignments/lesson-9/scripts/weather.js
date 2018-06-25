@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=8605cc54bea6b44a5c460b72efe78112&units=imperial',true) ;
+weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=8605cc54bea6b44a5c460b72efe78112&units=imperial',true) ;
 weatherObject.send();
 
 weatherObject.onload = function() {
@@ -15,7 +15,7 @@ weatherObject.onload = function() {
 
 
   var iconcode = weatherInfo.weather[0].icon;
-  var icon_path = "://openweathermap.org/img/w/" + iconcode + ".png";
+  var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";
   document.getElementById('weather_icon').src = icon_path;  
 
   }
