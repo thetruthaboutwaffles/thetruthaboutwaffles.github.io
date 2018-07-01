@@ -13,6 +13,7 @@ if (pageHREF !=="") {
 		menu[i].parentNode.className="";
 		if (currentURL===pageHREF) {
 			menu[i].parentNode.className="active";
+
 		}
 
 	}

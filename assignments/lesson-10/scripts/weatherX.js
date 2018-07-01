@@ -10,7 +10,7 @@
 
 
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','//api.openweathermap.org/data/2.5/weather?id=4759986&appid=8605cc54bea6b44a5c460b72efe78112&units=imperial',true) ;
+weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?id=4759986&appid=8605cc54bea6b44a5c460b72efe78112&units=imperial',true) ;
 weatherObject.send();
 
 
@@ -32,3 +32,34 @@ weatherObject.onload = function() {
 
   }
 
+//Next City
+
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+
+  var menu = document.querySelectorAll('ul#mainmenu li a');
+  var i;
+
+  for(i=0; i<menu.length; i++) {
+
+    var currentURL=(menu[i].getAttribute("href"));
+    menu[i].parentNode.className="";
+    if (currentURL===pageHREF) {
+      menu[i].parentNode.className="active";
+
+      console.log(currentURL);
+
+      if (console.log() = "franklin.html") {
+
+        function();
+
+      }
+
+    }
+
+  }
+
+}

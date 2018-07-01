@@ -9,6 +9,7 @@ body {
 /* I added your Google font as the base font-family */
 
     font-family: 'Sunflower', sans-serif;
+
 }
 /* max-width 100% makes the the elements go all the way to the edges of the screen.*/
 
@@ -28,6 +29,11 @@ header h2 {
     margin-top: 0;
 }
 
+.logo {
+
+    
+}
+
 nav {
     background-color: #3b444b;
     font-family: 'Candal', sans-serif;
@@ -38,6 +44,7 @@ nav {
 }
 
 nav button {
+
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
@@ -46,9 +53,16 @@ nav button {
 }
 
 nav ul {
+    
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin-left: 70px;
 }
 
 nav ul li a {
@@ -116,8 +130,12 @@ section.weather-summary {
     max-width: 100%;
     margin: auto;
 }
-#TDF {display: none;}
+#TDF {display: none;
+border: ;
+
+}
 /* make the title stand out */
+
 
 article h3 {
     padding-left: 20px;
