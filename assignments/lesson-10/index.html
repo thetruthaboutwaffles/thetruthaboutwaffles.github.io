@@ -9,14 +9,12 @@
 
   <meta name="Description" content="Rain, or Shine?: A page dedicated to reporting the weather.">
 
-  <link rel="stylesheet" type="text/css" href="styles/main-5.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="styles/medium-5.css">
   <link rel="stylesheet" type="text/css" href="styles/large-5.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
-  <script type="text/javascript" src="scripts/hamburger.js"></script>
-  <script type="text/javascript" src="scripts/currentdate.js"></script>
-
+  
 </head>
 <body>
 
@@ -40,7 +38,7 @@
   <main>
 
       <section class="forecast">
-     <span div id="TDF"> <h3>Ten Day Forecast</h3>
+     <span id="TDF"> <h3>Ten Day Forecast</h3>
       <table>
         <thead>
           <tr>
@@ -81,8 +79,9 @@
       </p>
     </article>      
  
-   <h2>Town Data</h2>
+   <h2 class="td">Town Data</h2>
 <br>
+   <div class="data" >
    <h3><span id="name"></span></h3>
 <br>
    <p>Motto:<span id="motto"></span></p>
@@ -97,20 +96,14 @@
    <p>Population:<span id="pop1">00</span></p>
    <p>Annual Rainfall:<span id="annRain1">00</span></p>
 <br><br>
-   <h3><span id="name2"></span></h3>
-<br>
-   <p>Motto:<span id="motto2"></span></p>
-   <p>Year Founded:<span id="yearFound2">0000</span></p>
-   <p>Population:<span id="pop2">00</span></p>
-   <p>Annual Rainfall:<span id="annRain2">00</span></p>
-<br><br>
-   <h3><span id="name3"></span></h3>
+     <h3><span id="name3"></span></h3>
 <br>
    <p>Motto:<span id="motto3"></span></p>
    <p>Year Founded:<span id="yearFound3">0000</span></p>
    <p>Population:<span id="pop3">00</span></p>
    <p>Annual Rainfall:<span id="annRain3">00</span></p>
 <br><br>
+</div>
   </main>
     
 
@@ -128,7 +121,7 @@
     </section>
 
   </footer>
-
+<script type="text/javascript" src="scripts/hamburger.js"></script>
 <script type="text/javascript" src="scripts/currentdate.js"></script>
 <script type="text/javascript" src="scripts/towndata.js"></script>
 

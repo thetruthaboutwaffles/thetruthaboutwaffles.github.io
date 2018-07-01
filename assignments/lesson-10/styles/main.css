@@ -13,7 +13,7 @@ body {
 }
 /* max-width 100% makes the the elements go all the way to the edges of the screen.*/
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer{ /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
     max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -31,7 +31,8 @@ header h2 {
 
 .logo {
 
-    
+    float: left;
+    padding: 10px 0;
 }
 
 nav {
@@ -77,6 +78,21 @@ nav ul li a {
 nav ul li.active a {background-color: #000000;}
 nav ul li a:hover {background-color: #260225;}
 nav ul.hide {display: none;}
+
+.td {
+
+    display: flex;
+    border: 1px ;
+    background-color: blue;
+}
+
+.data {
+    display: inline-flex;
+    padding: 2px;
+    border: 2px;
+    border-radius: 2;
+    border-color: black;
+}
 
 /*nav {
     background-color: #111;
