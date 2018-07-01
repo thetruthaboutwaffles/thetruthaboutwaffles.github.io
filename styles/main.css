@@ -1,45 +1,179 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: Ubuntu, sans-serif ;
-    color:  #Black ;
+body {
+    font-size: 14px; /* Declare the base font-family */
+
+/* I added your Google font as the base font-family */
+
+    font-family: 'Sunflower', sans-serif;
+
+}
+/* max-width 100% makes the the elements go all the way to the edges of the screen.*/
+
+header, nav, main, footer{ /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-h1 {
-    font-size: 14.xrem  (rem is a unit of measure);
-    color:  #Red;
+/* Give the title some breathing room */
+
+header h1 {
+    padding-left: 20px;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+header h2 {
+    font-size: 2rem;
+    margin-top: 0;
 }
 
+.logo {
+
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: #3b444b;
+    font-family: 'Candal', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+nav button {
+
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #6e7f80;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin-left: 70px;
+}
+
+nav ul li a {
+    display: flex;
+    flex-flow: row wrap;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {background-color: #000000;}
+nav ul li a:hover {background-color: #260225;}
+nav ul.hide {display: none;}
+
+.td {
+
+    display: flex;
+    border: 1px ;
+    background-color: blue;
+}
+
+.data {
+    flex-wrap: wrap;
+    padding: 2px;
+    border: 2px;
+    border-radius: 2;
+    border-color: black;
+}
+
+/*nav {
+    background-color: #111;
+}
+
+ display the hamburger here
+
+nav button {
+    display: flex;
+    font-size: 3rem;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    border: none;
+}
+nav ul.hide {display: none;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+nav ul li a {
+    display: flex;
+    flex-flow: row wrap;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    background-color:#111;
+    padding: 20px;
+}
+nav ul li.active a {background-color: #858786;}
+nav ul li a:hover {background-color: #603831;}*/
+
+/* This is where you style the Franklin Image */
+
+main figure {
+    max-width: 100%;
+    margin: auto;}
+
+/* Give the title some breathing room */
 h2 {
-    font-size: 12.xrem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    padding-left: 20px;
 }
-
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 720px;
+section.weather-summary {
+    background-color: #858786;
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
 }
+#TDF {display: none;
+border: ;
 
-header, footer, footer a {
-    text-align: center;
-    background-color: red;
-    color: whitesmoke;
 }
+/* make the title stand out */
 
-header img {
-    width: auto;
-    height: auto;
-    float: right;
+
+article h3 {
+    padding-left: 20px;
+    font-size: 2rem;
 }
-
+article p {
+    font-size: 1.8rem;
+    padding: 0 20px;
+}
+article img {
+    max-width:100%;
+    margin: auto;
+}
 footer {
-    font-size: /* smaller */;
+
+    font-size: 1.8rem;
+    padding: 20px;
+    background-color:#111;
+    color: white;
 }
+
+footer section.contact {
+    margin-bottom: 20px;
+}
+
