@@ -1,0 +1,104 @@
+@media only screen and (max-width: 37.5em) {
+
+.hamburger {
+	display: block;
+	position: absolute;
+	top: 2rem;
+	right: 1.25rem;
+}
+
+.navigation {
+	list-style: none;
+	padding-left: 0;
+}
+.navigation li {
+	display: none;
+}
+
+
+
+	.navigation.responsive {
+		position: relative;
+	}
+	.navigation.responsive li {
+		background-color: #eee;
+		display: block;
+		width: 100%;
+		margin: 2px 0;
+		border: 1px solid #ddd;
+	}
+	.navigation.responsive li a {
+		padding: 1rem;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+	}
+	.navigation.responsive li a:hover {
+		background-color: #ddd;
+	}
+}
+
+
+
+
+	
+	.hamburger {
+		display: none;
+	}
+	.navigation {
+		background-color: #333;
+		overflow: hidden;
+		text-align: center;
+	}
+	.navigation li {
+		display: inline-block;
+		margin-left: 0.25rem;
+	}
+	.navigation a {
+		display: block;
+		color: #eee;
+		padding: 0.5rem;
+		text-align: center;
+		text-decoration: none;
+	}
+	.navigation a:hover {
+		color: #000;
+		background-color: #777;
+	}
+
+
+
+
+ nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+{
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast { display: contents;}  /* show the 10-day forecast with the medium view and up */
+
+  }
